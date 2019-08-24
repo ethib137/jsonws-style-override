@@ -1,0 +1,5 @@
+Bundle-Name: Api Jsonws Style Override
+Bundle-SymbolicName: com.dnebinger.api.jsonws.style.override
+Bundle-Version: 1.0.0
+Export-Package: com.dnebinger.api.jsonws
+
