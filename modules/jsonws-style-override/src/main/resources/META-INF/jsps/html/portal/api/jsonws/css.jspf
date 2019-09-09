@@ -281,3 +281,22 @@ h3 {
 	background-color: #EEB;
 	color: #333;
 }
+
+@media only screen and (min-width: 768px) {
+	#banner, #footer {
+		-moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+		-webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+		position: relative;
+		z-index: 1;
+	}
+
+	#heading {
+		overflow: hidden;
+	}
+
+	.lfr-api-navigation, .lfr-api-details {
+		height: calc(100vh - 106px);
+		overflow-y: scroll;
+	}
+}

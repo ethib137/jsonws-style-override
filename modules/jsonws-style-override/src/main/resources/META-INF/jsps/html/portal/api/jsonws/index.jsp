@@ -38,22 +38,37 @@
 
 		<div id="content">
 			<div id="main-content">
-				<aui:row>
-					<aui:col cssClass="lfr-api-navigation" width="<%= 25 %>">
-						<liferay-util:include page="/html/portal/api/jsonws/actions.jsp" />
-					</aui:col>
+				<div class="container-fluid">
+					<aui:row>
+						<aui:col cssClass="lfr-api-navigation pt-3" width="<%= 25 %>">
+							<liferay-util:include page="/html/portal/api/jsonws/actions.jsp" />
+						</aui:col>
 
-					<aui:col cssClass="lfr-api-details" width="<%= 75 %>">
-						<liferay-util:include page="/html/portal/api/jsonws/action.jsp" />
-					</aui:col>
-				</aui:row>
+						<aui:col cssClass="lfr-api-details pt-3" width="<%= 75 %>">
+							<liferay-util:include page="/html/portal/api/jsonws/action.jsp" />
+						</aui:col>
+					</aui:row>
+				</div>
 			</div>
 		</div>
 
-		<footer id="footer" role="contentinfo">
-			<p class="powered-by">
+		<footer class="mt-0" id="footer" role="contentinfo">
+			<p class="m-0 p-2 powered-by">
 				<liferay-ui:message key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
 			</p>
 		</footer>
 	</div>
+
+	<aui:script>
+		AUI().ready(
+			function() {
+				var container = $('#main-content .lfr-api-navigation');
+				var selected = $('#services .lfr-api-signature.selected')
+
+				var scrollTop = selected.offset().top - container.children().offset().top;
+
+				container.animate({scrollTop: scrollTop})
+			}
+		);
+	</aui:script>
 </c:if>
