@@ -21,12 +21,12 @@
 		<%@ include file="/html/portal/api/jsonws/css.jspf" %>
 	</style>
 
-	<div id="wrapper">
+	<div class="pt-0" id="wrapper">
 		<header id="banner" role="banner">
 			<div id="heading">
-				<h1 class="site-title">
-					<a class="logo" href="<%= HtmlUtil.escapeAttribute(jsonWSContextPath) %>" title="JSONWS API">
-						<img alt="<%= HtmlUtil.escapeAttribute("JSONWS API") %>" height="<%= themeDisplay.getCompanyLogoHeight() %>" src="<%= HtmlUtil.escape(themeDisplay.getCompanyLogo()) %>" width="<%= themeDisplay.getCompanyLogoWidth() %>" />
+				<h1 class="align-items-center d-flex m-2 site-title">
+					<a class="logo mr-2" href="<%= HtmlUtil.escapeAttribute(jsonWSContextPath) %>" title="JSONWS API">
+						<img alt="<%= HtmlUtil.escapeAttribute("JSONWS API") %>" height="50px" src="<%= HtmlUtil.escape(themeDisplay.getCompanyLogo()) %>" width="auto" />
 					</a>
 
 					<span class="site-name">
