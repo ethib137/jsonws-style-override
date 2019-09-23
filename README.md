@@ -33,4 +33,4 @@ in the build.gradle file and give it a whirl. No promises of course, but it can'
 
 This will deploy it to `/bundles/osgi/modules`.
 
-If you want to deploy it to a bundle that lives somewhere else you can add a `gradle-local.properties` file with the following property pointing to you bundle location: `liferay.workspace.home.dir=`.
+If you want to deploy it to a bundle that lives somewhere else you can add a `gradle-local.properties` file with the following property pointing to your bundle location: `liferay.workspace.home.dir=`.
