@@ -1,5 +1,7 @@
 # jsonws-style-override
 
+![gif](/images/JSONWS.gif)
+
 So, I've been hitting Liferay 7.2's /api/jsonws page to get info on JSON
 web service methods that Liferay provides and, well, I just have to say
 I don't like it.
@@ -24,3 +26,11 @@ Enjoy!
 
 P.S. Although this is for 7.2, I think you can downgrade it reasonably well to 7.0 or 7.1. Just fix your versions
 in the build.gradle file and give it a whirl. No promises of course, but it can't hurt to try.
+
+## Deploy
+
+` $ blade deploy `
+
+This will deploy it to `/bundles/osgi/modules`.
+
+If you want to deploy it to a bundle that lives somewhere else you can add a `gradle-local.properties` file with the following property pointing to you bundle location: `liferay.workspace.home.dir=`.
